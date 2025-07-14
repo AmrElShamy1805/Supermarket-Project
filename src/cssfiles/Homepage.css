@@ -1,0 +1,232 @@
+/* === Base Styles === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #2d2d2d;
+}
+
+/* === Welcome Section === */
+.welcome-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 0 1rem;
+  text-align: center;
+}
+
+.welcome-text-container {
+  max-width: 800px;
+}
+
+.welcome-text-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-text-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0;
+}
+
+/* === Notification Banner === */
+.notification-banner {
+  background-color: #B6B09F;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 90%;
+  margin: 1.5rem auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.notification-banner .left-icon,
+.notification-banner .right-icon {
+  font-size: 1.5rem;
+}
+
+.notification-banner .message {
+  flex: 1;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+/* === Sponsor Section === */
+.sponser-section-wrapper {
+  width: 100%;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.sponser-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.small-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  min-width: 120px;
+  flex: 1 1 calc(20% - 1rem);
+  padding: 0.75rem;
+  background-color: #B6B09F;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  gap: 1rem;
+  text-align: center;
+}
+
+.small-section-text-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.Smaller-text {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* === Category Buttons === */
+.quick-categories {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f8f6f1;
+  margin-bottom: 2rem;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.category-buttons button {
+  padding: 0.75rem 1.5rem;
+  background-color: #B6B09F;
+  border: none;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.category-buttons button:hover {
+  background-color: #a59d87;
+}
+
+/* === Featured Section === */
+.featured-section {
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  background-color: #f9f8f3;
+  text-align: center;
+}
+
+.featured-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #2c2c2c;
+}
+
+.featured-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 0.25rem;
+}
+
+/* === Homepage Header === */
+.homepage-header {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.homepage-header h1 {
+  font-size: 2.5rem;
+  color: #2d2d2d;
+  margin-bottom: 0.5rem;
+}
+
+.homepage-header p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0;
+}
+
+/* === Media Queries === */
+@media (max-width: 1024px) {
+  .welcome-text-container h1 {
+    font-size: 2rem;
+  }
+
+  .category-buttons button {
+    padding: 0.5rem 1rem;
+  }
+
+  .small-section {
+    flex: 1 1 calc(33.33% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .notification-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .welcome-text-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .small-section {
+    flex: 1 1 calc(50% - 1rem);
+  }
+
+  .featured-section h2 {
+    font-size: 1.7rem;
+  }
+
+  .featured-section p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-text-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .category-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-buttons button {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .small-section {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .featured-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .featured-section p {
+    font-size: 0.95rem;
+  }
+}

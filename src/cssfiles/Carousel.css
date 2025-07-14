@@ -1,0 +1,27 @@
+.carousel-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-bottom:2rem;
+}
+
+.carousel {
+  width: 92%;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .carousel .carousel-item {
+    height: 250px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel .carousel-item {
+    height: 180px !important;
+  }
+}

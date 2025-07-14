@@ -1,0 +1,24 @@
+.listofitems { 
+    display:flex;
+    flex-direction:row;
+    flex-wrap : wrap;
+    padding:3rem;
+    align-items:center;
+    justify-content: center;
+    gap:3rem;
+}
+.cart-items-section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+.cart-display-section{
+     display:flex;
+    flex-direction:row;
+    flex-wrap : wrap;
+    padding:3rem;
+    align-items:center;
+    justify-content: center;
+    gap:3rem;
+}
