@@ -162,7 +162,7 @@ const deleteCartItem = (ItemToDelete) => {
   return (
     <>
       <Routes>
-        <Route path="/" element = {<HomePage/>} />
+        <Route path="/" element = {<HomePage items = {items} />} />
         <Route path="/products" element = {<ProductsPage items = {items} addCartItem = {addCartItem}/>}/>
         <Route path="/cart" element = {<CartPage cart = {Cart} DeleteCartItem = {deleteCartItem}/>}/>
       </Routes>

@@ -37,6 +37,9 @@ body {
   body {
     font-size: 16px;
   }
+  .listofitems{
+    flex-wrap:wrap;
+  }
 }
 
 /* ========== LAPTOPS ========== */
