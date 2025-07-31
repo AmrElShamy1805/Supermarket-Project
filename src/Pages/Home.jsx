@@ -2,7 +2,7 @@ import NavigationBar from "../Components/navbar";
 import ItemList from "../Components/listofitems";
 import Carousel from "../Components/Carousel";
 import "../cssfiles/Homepage.css";
-
+import FooterSection from "../Components/Footer";
 export default function HomePage() {
   return (
     <>
@@ -81,6 +81,7 @@ export default function HomePage() {
         <p>Check out our most popular items and exclusive deals!</p>
         {/* <ItemList listofitems={items.slice(0, 8)} /> // Optional in future */}
       </section>
+      <FooterSection/>
     </>
   );
 }

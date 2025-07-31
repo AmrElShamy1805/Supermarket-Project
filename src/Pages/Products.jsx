@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import ItemList from "../Components/listofitems";
 import NavigationBar from "../Components/navbar";
 import ProductsBar from "../Components/minitureNav";
-
+import FooterSection from "../Components/Footer";
 export default function ProductsPage({ items , addCartItem }) {
   const location = useLocation();
   const query = new URLSearchParams(location.search);
@@ -32,6 +32,7 @@ export default function ProductsPage({ items , addCartItem }) {
       </div>
       <ProductsBar />
       <ItemList listofitems={filteredItems} addCartItem = {addCartItem} />
+      <FooterSection/>
     </>
   );
 }
